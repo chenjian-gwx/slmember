@@ -1,0 +1,75 @@
+一.Contoller层CRUD方法命名
+
+//每个方法都要有注释
+
+1.增加:add.do
+2.删除:remove.do
+3.修改:modify.do
+4.查询单个:find.do
+5.分页查询:page.do
+6.查询所有:list.do
+7.查看详情:info.do
+
+//每个方法都要有注释
+service
+   add|save
+   find
+   remove
+   modify
+dao
+   insert
+   delete
+   update
+   select
+
+二.请求方式:
+  /模块名/操作
+  /user/add.do
+
+
+三.分层开发
+  com.sy
+         model
+  	        user
+            email
+            goods
+         serive
+            user
+            email
+            goods
+         dao
+  	        user
+            email
+            goods
+         common
+
+
+    com.sy
+        zs
+          model
+          service
+  	      dao
+        lisi
+          model
+          service
+  	       dao
+        common
+
+
+四.主机
+   Es
+   CAS
+   FastDFS
+   mysql
+    agent01
+    agent02
+
+
+五。模块划分
+    组员一：
+    搭建项目架构发布到github上，登录功能，权限功能，用户管理（登录，退出。。。。），后台功能
+    组员二：
+    购物管理，电子银行，咨讯管理，代理商管理功能（奖励，下线）
+
+
+
